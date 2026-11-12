@@ -24,6 +24,10 @@ import { UebernahmeRadarClient } from "uebernahmeradar-sdk";
 
 const client = new UebernahmeRadarClient(process.env.UEBERNAHMERADAR_API_TOKEN);
 
+// On emptera.com (the EU-wide face of the same platform), pass the matching
+// base URL instead — same token format, same endpoints:
+// new UebernahmeRadarClient(token, { baseUrl: "https://emptera.com/api/v1" })
+
 // Watchlists
 const watchlist = await client.createWatchlist({ name: "Q1 Pipeline", color: "#c2410c" });
 await client.addWatchlistMember(watchlist.id, { announcementId: "…", note: "Erstkontakt geplant" });
