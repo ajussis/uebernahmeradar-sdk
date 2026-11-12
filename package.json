@@ -1,0 +1,30 @@
+{
+  "name": "uebernahmeradar-sdk",
+  "version": "0.1.0",
+  "description": "Minimal zero-dependency Node.js SDK for the Übernahme-Radar (bankruptbuy) write API — watchlists and search alerts.",
+  "type": "module",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajussis/uebernahmeradar-sdk"
+  },
+  "keywords": [
+    "uebernahmeradar",
+    "insolvency",
+    "insolvenz",
+    "m&a",
+    "distressed",
+    "api"
+  ]
+}
